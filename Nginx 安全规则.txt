@@ -1,0 +1,7 @@
+location ^~ gacha/data/ {
+    deny all;
+    return 404;
+}
+location ~ ^gacha/uploads/.*\.php$ {
+    deny all;
+}
